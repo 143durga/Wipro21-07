@@ -1,6 +1,0 @@
-2025-08-08T12:21:26.937+05:30  WARN 21612 --- [loginapp] [http-nio-8080-exec-1] c.loginapp.controller.GreetController    : This is a WARN log
-2025-08-08T12:21:26.940+05:30 ERROR 21612 --- [loginapp] [http-nio-8080-exec-1] c.loginapp.controller.GreetController    : This is an ERROR log
-2025-08-08T12:27:34.356+05:30  WARN 19548 --- [loginapp] [http-nio-8080-exec-1] c.loginapp.controller.GreetController    : This is a WARN log
-2025-08-08T12:27:34.359+05:30 ERROR 19548 --- [loginapp] [http-nio-8080-exec-1] c.loginapp.controller.GreetController    : This is an ERROR log
-2025-08-08T12:27:37.211+05:30  WARN 19548 --- [loginapp] [http-nio-8080-exec-2] c.loginapp.controller.GreetController    : This is a WARN log
-2025-08-08T12:27:37.211+05:30 ERROR 19548 --- [loginapp] [http-nio-8080-exec-2] c.loginapp.controller.GreetController    : This is an ERROR log
