@@ -1,0 +1,26 @@
+/* Universal selector */
+* {
+  color: gray;
+  font-family: Arial, sans-serif;
+  margin: 10px 0;
+}
+
+/* Group selector (h1 and h2) */
+h1, h2 {
+  color: blue;
+  font-weight: normal;
+}
+
+/* Class selector */
+.highlight {
+  color: orange;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* ID selector */
+#special {
+  color: red;
+  font-weight: bolder;
+  font-size: 28px;
+}

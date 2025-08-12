@@ -1,0 +1,10 @@
+.div1 {
+  background-color: lightblue;
+  padding: 20px;
+  margin-right: 40px; /* space between div1 and div2 */
+}
+
+.div2 {
+  background-color: lightcoral;
+  padding: 20px;
+}

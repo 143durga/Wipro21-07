@@ -1,0 +1,180 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: #ff9800;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Banner */
+.banner {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Tagline */
+.tagline {
+    text-align: center;
+    font-size: 1.4rem;
+    color: green;
+    margin-bottom: 20px;
+}
+
+/* Featured Products */
+.featured {
+    text-align: center;
+    padding: 20px;
+}
+
+.products-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 per row */
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product-card {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+button {
+    background-color: #ff9800;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+/* Forms */
+form {
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .products-row {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on tablet */
+    }
+}
+
+@media (max-width: 600px) {
+    .products-row {
+        grid-template-columns: 1fr; /* 1 per row on mobile */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 8px 0;
+    }
+}

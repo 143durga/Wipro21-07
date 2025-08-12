@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products - My Online Store</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        /* Simple product layout */
+        #products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .product {
+            flex: 0 0 calc(50% - 20px); /* 2 per row */
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: #ff9800;
+            color: white;
+            padding: 8px 14px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e68900;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="home.html">Home</a> |
+    <a href="products.html">Products</a> |
+    <a href="cart.html">Cart</a> |
+    <a href="about.html">About</a> |
+    <a href="contact.html">Contact</a>
+</nav>
+
+<h1>Our Products</h1>
+
+<section id="products">
+    <div class="product">
+        <h2>Photo Frame</h2>
+        <img src="https://m.media-amazon.com/images/I/71ndsN2Bk5L._AC_UL480_FMwebp_QL65_.jpg" alt="Frame">
+        <p>Price: $10</p>
+        <p>UHUD CRAFTS Wooden Table-Top&Wall Hanging Photo Frame|Solid Wood Picture Frame For Table Decor,Wall..</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h2>Wax Candle</h2>
+        <img src="https://m.media-amazon.com/images/I/61+uBsrwnHL._AC_UL480_FMwebp_QL65_.jpg" alt="Wax">
+        <p>Price: $15</p>
+        <p>Ocean Breeze Votive Wax Candle, Burning Time 5 Hours - Set of 6</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h2>Flower Vase</h2>
+        <img src="https://m.media-amazon.com/images/I/61zkHOWo3nL._AC_UL480_FMwebp_QL65_.jpg" alt="Flower">
+        <p>Price: $12</p>
+        <p>Flower Vase - Designer Metal Floral Vase - Flowerpot for Real & Artificial Flowers - Virelle - DOM-6 (Black)</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h2>Ceramic Mugs</h2>
+        <img src="https://m.media-amazon.com/images/I/71CSinSb51L._AC_UL480_FMwebp_QL65_.jpg" alt="Mug">
+        <p>Price: $22</p>
+        <p>The Earth StoreBlack Muscle Ceramic Mugs to Gift to Best Friend, Tea Mugs, Microwave Safe Coffee Mugs</p>
+        <button>Add to Cart</button>
+    </div>
+</section>
+
+</body>
+</html>

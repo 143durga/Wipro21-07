@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  gap: 20px; /* space between cards */
+  padding: 20px;
+  background-color: #0073e6; /* blue background like your screenshot */
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  flex: 1; /* equal width */
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.card h2 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  flex-grow: 1;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.product-item img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.product-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.card-link {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #0073e6;
+  cursor: pointer;
+  text-decoration: underline;
+  align-self: flex-start;
+}
