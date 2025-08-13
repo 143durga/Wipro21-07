@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="Ex13.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <label>Email:</label>
+        <input type="text" id="email" onblur="validateEmail()">
+        <span id="emailError" class="error">Email is required</span>
+
+        <label>Password:</label>
+        <input type="password" id="password" onblur="validatePassword()">
+        <span id="passError" class="error">Password is required</span>
+
+        <button onclick="handleLogin()">Login</button>
+    </div>
+    <script src="Ex13.js" defer></script>
+</body>
+</html>

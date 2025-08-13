@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+.quiz-container {
+  background: white;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.option {
+  display: block;
+  background: #eee;
+  margin: 5px auto;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  max-width: 300px;
+}
+
+.option:hover {
+  background: #ddd;
+}
