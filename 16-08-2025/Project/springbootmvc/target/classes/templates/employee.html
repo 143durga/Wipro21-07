@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Employees</title>
+</head>
+<body>
+<h2>Employee List</h2>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Employee Type</th>
+        <th>Address</th>
+        <th>Department</th>
+    </tr>
+    <tr th:each="emp : ${employees}">
+        <td th:text="${emp.id}"></td>
+        <td th:text="${emp.firstName + ' ' + emp.lastName}"></td>
+        <td th:text="${emp.employeeType}"></td>
+        <td th:text="${emp.address.street + ', ' + emp.address.city + ', ' + emp.address.state + ', ' + emp.address.zipcode}"></td>
+        <td th:text="${emp.department.name}"></td>
+    </tr>
+</table>
+
+<h2>Add Employee</h2>
+<form th:action="@{/employees}" th:object="${employee}" method="post">
+    <p>First Name: <input type="text" th:field="*{firstName}" required /></p>
+    <p>Last Name: <input type="text" th:field="*{lastName}" /></p>
+    <p>Email: <input type="email" th:field="*{email}" required /></p>
+    <p>Employee Type: 
+        <select th:field="*{employeeType}">
+            <option value="INTERN">INTERN</option>
+            <option value="CONTRACT">CONTRACT</option>
+            <option value="REGULAR">REGULAR</option>
+            <option value="CONSULTANT">CONSULTANT</option>
+        </select>
+    </p>
+    <h3>Department</h3>
+    <p>Name: <input type="text" th:field="*{department.name}" required /></p>
+
+    <h3>Address</h3>
+    <p>Street: <input type="text" th:field="*{address.street}" required /></p>
+    <p>City: <input type="text" th:field="*{address.city}" required /></p>
+    <p>State: <input type="text" th:field="*{address.state}" required /></p>
+    <p>Zipcode: <input type="text" th:field="*{address.zipcode}" required /></p>
+
+    <button type="submit">Add Employee</button>
+</form>
+</body>
+</html>
