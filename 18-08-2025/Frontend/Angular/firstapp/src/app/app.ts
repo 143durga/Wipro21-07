@@ -1,0 +1,13 @@
+import { Component, signal } from '@angular/core';
+import { Secondcomp } from './secondcomp/secondcomp';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [Secondcomp],
+  templateUrl: './app.html',   
+  styleUrls: ['./app.css']     
+})
+export class App {
+  protected readonly title = signal('firstapp');
+}

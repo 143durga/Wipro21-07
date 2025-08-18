@@ -1,0 +1,7 @@
+<h2>Search Filter Example</h2>
+
+<input type="text" [(ngModel)]="searchText" placeholder="Type to search..." />
+
+<select size="5">
+  <option *ngFor="let name of filteredNames">{{ name }}</option>
+</select>

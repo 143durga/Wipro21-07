@@ -1,0 +1,37 @@
+<h1>{{ message }}</h1>
+<input type="text" [(ngModel)]="message" placeholder="Type something..."><br><br>
+<button (click)="printMessage()">Print Message</button><br><br>
+<h2>List of Names</h2>
+
+<ul>
+  <li *ngFor="let name of nameList; let i = index">
+    {{ name }}
+  </li>
+</ul>
+
+<app-checkbox-message></app-checkbox-message>
+
+<select>
+  <option *ngFor="let country of dropdownCountries">{{ country }}</option>
+</select>
+<button (click)="loadCountries()">Load</button>
+
+<h2>Select a Color</h2>
+
+<select [(ngModel)]="color">
+  <option value="red">Red</option>
+  <option value="green">Green</option>
+  <option value="black">Black</option>
+  <option value="default">Default</option>
+</select>
+
+<div [ngSwitch]="color">
+  <div *ngSwitchCase="'red'" style="color:red">Red Color</div>
+  <div *ngSwitchCase="'green'" style="color:green">Green Color</div>
+  <div *ngSwitchCase="'black'" style="color:black">Black Color</div>
+  <div *ngSwitchDefault>Default Color</div>
+</div>
+
+<app-search-filter></app-search-filter>
+
+<app-home></app-home>

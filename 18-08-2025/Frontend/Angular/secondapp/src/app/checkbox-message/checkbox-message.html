@@ -1,0 +1,9 @@
+<p>checkbox-message works!</p>
+<label>
+  <input type="checkbox" (change)="toggleMessage()"> Show Message
+</label>
+
+<p *ngIf="showMessage">
+  Hello! This message appears when the checkbox is checked.
+</p>
+

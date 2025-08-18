@@ -1,0 +1,19 @@
+.book-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+}
+
+.book-card {
+  width: 19%; 
+  margin: 0.5%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.book-card img {
+  width: 100px;
+  height: 100px;
+}
