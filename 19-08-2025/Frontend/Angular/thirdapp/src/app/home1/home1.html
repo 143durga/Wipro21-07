@@ -1,0 +1,9 @@
+<h2>Fruit List</h2>
+<div class="fruit-container row">
+  <div class="col-md-3" *ngFor="let fruit of fruits">
+    <app-fruit 
+      [fruit]="fruit" 
+      (removeFruit)="removeFruit($event)">
+    </app-fruit>
+  </div>
+</div>

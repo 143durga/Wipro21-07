@@ -1,0 +1,16 @@
+<table class="table table-bordered">
+  <thead class="table-primary">
+    <tr>
+      <th>Task Description</th>
+      <th>Category</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let task of tasks">
+      <td>{{task.description}}</td>
+      <td>{{task.category}}</td>
+      <td><button class="btn btn-danger btn-sm" (click)="onRemoveTask(task.id)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>

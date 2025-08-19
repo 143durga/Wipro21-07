@@ -1,0 +1,13 @@
+.app1 {
+  background-color: lightblue;
+  color: darkblue;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.app2 {
+  background-color: lightgreen;
+  color: darkgreen;
+  padding: 10px;
+  border-radius: 5px;
+}
